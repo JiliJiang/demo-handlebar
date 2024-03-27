@@ -1,0 +1,9 @@
+<!-- This template includes hardcoded data. In future lessons, you will be rendering data dynamically. -->
+<h2>This is home page!</h2>
+<a href="/register">Register</a>
+{{#each users as |user|}}
+<ul>
+<li>Username: {{user.name}}</li>
+<li>Address: {{user.address}}</li>
+</ul>
+{{/each}}
